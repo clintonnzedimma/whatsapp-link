@@ -157,7 +157,7 @@
 			let link = `https://wa.me/${phone}`;
 
 			if (msg.length > 0) {
-				link = 	`https://wa.me/${phone}?text=${msg}`;		
+				link = 	`https://wa.me/${phone}?text=${encodeURI(msg)}`;		
 			}
 
 			$("#link").val(link);
